@@ -55,6 +55,20 @@ a[3].textContent = siteContent['nav']['nav-item-4'];
 a[4].textContent = siteContent['nav']['nav-item-5'];
 a[5].textContent = siteContent['nav']['nav-item-6'];
 
+let oneEnd = document.createElement('a');
+oneEnd.textContent = 'New Start';
+document.querySelector('nav').appendChild(oneEnd);
+
+let oneStart = document.createElement('a');
+oneStart.textContent = 'New End';
+document.querySelector('nav').prepend(oneStart);
+
+let ab = document.querySelectorAll('a');
+
+ab.forEach(e => {
+  e.style.color = 'green';
+})
+
 let button = document.querySelector('button');
 button.textContent = siteContent['cta']['button']
 
